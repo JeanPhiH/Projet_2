@@ -61,9 +61,6 @@ a {
 
 /****** Header ***********/
 header {
-	font-size: 12px;
-	margin: 0 auto;
-	padding: 0;
 	height: 79px;
 	width: 100%;
 	max-width: 1440px;
@@ -71,12 +68,16 @@ header {
 	justify-content: space-between;
 	
 }
+.logo {
+	height: 79px;
+	width: 161.1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 header img {
 	height: 19px;
-	position: relative;
-	left: 50px;
-	top: 30px;
 }
 
 nav {
@@ -86,7 +87,7 @@ nav {
 	height: 35px;
 }
 
-ul {
+.menu {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -99,12 +100,13 @@ nav li {
 	display: flex;
 	list-style-type: none;
 	height: 100%;
+	border-top: 2px solid transparent;
 }
 
 .elt-menu {
 	display: inline-block;
 	align-self: flex-end;
-	
+	font-size: 16px;
 	
 }
 
@@ -220,5 +222,33 @@ nav li:hover {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+			flex-direction: column;
+			align-items: center;
+			height: 115px;
+
+		}
+		header img {
+			position: static;
+		}
+		.elt-menu {
+			align-self: flex-start;
+		}
+		nav li {
+			flex: 0 1 50%;
+			justify-content: center;
+		}
+		nav li:hover {
+			border-top: none;
+			border-bottom: 2px solid var(--main-color);
+			z-index: 100;
+	}
+	.logo {
+		width: 121.09px;
+		height: 79px;
+	}
+	.menu {
+		height: 19px;
+		width: 100%;
+	}
 }
