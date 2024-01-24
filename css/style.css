@@ -17,7 +17,10 @@
 .fa-solid {
 	color: var(--main-color);
 }
-
+.fs16b {
+	font-size: 16px;
+	font-weight: bold;
+}
 .fs17b {
 	font-size: 17px;
 	font-weight: bold;
@@ -193,6 +196,11 @@ h1 {
 	border-right: none;
 	text-align: center;
 }
+input::placeholder {
+	color:black;
+	opacity: 1; /*pour firefox*/
+}
+
 
 .search-button {
 	height: 100%;
@@ -278,7 +286,7 @@ h1 {
 	box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** HEBERGEMENTS ***********/
 .hebergements {
 	background-color: var(--main-bg-color);
 	width: 65%;
@@ -323,7 +331,7 @@ h1 {
 }
 
 
-/****** Populaires ***********/
+/****** POPULAIRES ***********/
 .populaires {
 	background-color: var(--main-bg-color);
 	width: 32%;
@@ -369,6 +377,37 @@ h1 {
 	margin-bottom: 5px;
 }
 
+/****** ACTIVITES ***********/
+
+.activites {
+	padding: 30px;
+	margin-top: 36px;
+}
+.activites-cards {
+	margin-top: 33px;
+	height: 439px;
+	display: flex;
+	justify-content: space-between;
+}
+.card-photo {
+	width: 297px;
+	background-color: white;
+	border-radius: 20px;
+	padding: 0;
+	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activites-cards img {
+	height: 380px;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+figcaption {
+	height: 59px;
+	margin-left: 19px;
+	margin-top: 15px;
+}
 
 
 
@@ -418,10 +457,6 @@ h1 {
 
 	.main-container {
 		padding: 0;
-	}
-
-	.hebergements-and-populaires {
-		margin-top: 0;
 	}
 
 	/***** HEADER *****/
@@ -505,6 +540,7 @@ h1 {
 
 	.hebergements-and-populaires {
 		width: 100%;
+		margin-top: 0;
 	}
 
 	.hebergements-and-populaires section {
@@ -527,6 +563,7 @@ h1 {
 		width: 100%;
 	}
 
+/***** HEBERGEMENTS *****/
 	.hebergements {
 		order: 2;
 		background-color: white;
