@@ -6,6 +6,8 @@
 	;
 }
 
+/* Colors */
+
 :root {
 	--main-color: #0065FC;
 	--main-bg-color: #F2F2F2;
@@ -17,14 +19,23 @@
 .fa-solid {
 	color: var(--main-color);
 }
+
+/* Font-size */
+
+p {
+	font-size: 16px;
+}
+
 .fs16b {
 	font-size: 16px;
 	font-weight: bold;
 }
+
 .fs17b {
 	font-size: 17px;
 	font-weight: bold;
 }
+
 .fs18b {
 	font-size: 18px;
 	font-weight: bold;
@@ -78,8 +89,6 @@ font-size: 14px;
 .neutral-star {
 	color: var(--main-bg-color)
 }
-
-
 
 /****** HEADER ***********/
 
@@ -147,10 +156,6 @@ h1 {
 	margin-bottom: 8px;
 	font-size: 22px;
 	font-weight: bold;
-}
-
-.subtitle {
-	font-size: 16px;
 }
 
 /* Search bar */
@@ -257,7 +262,6 @@ input::placeholder {
 .info {
 	height: 24px;
 	margin-top: 36px;
-	font-size: 16px;
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -412,6 +416,23 @@ figcaption {
 	align-items: center;
 	padding: 0 19px;
 }
+
+/****** FOOTER ***********/
+
+footer {
+	margin-top: 36px;
+	display: flex;
+	background-color: var(--main-bg-color);
+}
+.footer-part {
+	flex: 0 1 33%;
+	padding: 20px;
+
+}
+.footer-part p {
+	margin-top: 15px;
+}
+
 
 
 
@@ -602,6 +623,12 @@ figcaption {
 	}
 	.activites-cards img {
 		height: 141px;
+	}
+
+/***** FOOTER *****/
+	footer {
+		flex-direction: column;
+		padding: 30px;
 	}
 	
 }
