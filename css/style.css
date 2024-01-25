@@ -544,7 +544,7 @@ footer {
 		width: 100%;
 	}
 	#location {
-		/* width: 100% */
+		width: 100%
 	}
 	.search-button {
 		height: 100%;
@@ -629,7 +629,11 @@ footer {
 /***** POPULAIRES *****/
 	.activites-cards {
 		flex-direction: column;
-		height: 845px;
+		gap: 15px;
+		height: 100%;
+	}
+	.activites-cards a {
+		width: 100%;
 	}
 	.card-photo {
 		width: 100%;
@@ -641,6 +645,7 @@ footer {
 /***** FOOTER *****/
 	footer {
 		flex-direction: column;
+		margin-top: 35px;
 		padding: 30px;
 		gap: 50px;
 	}
