@@ -190,8 +190,9 @@ h1 {
 	/*on met la loupe derrière le bouton*/
 	position: relative;
 	left: -35px;
-	color: white;
+	color: red;
 	z-index: -1;
+	align-self: center;
 }
 
 #location {
@@ -215,6 +216,7 @@ input::placeholder {
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	color: white;
+	cursor: pointer;
 }
 
 /* Filter bar */
@@ -242,7 +244,7 @@ input::placeholder {
 .filter-button {
 	border-radius: 25px;
 	border: 2px solid var(--filter-border-color);
-	padding: 13px 19px;
+	padding: 13px 18px;
 	cursor: default;
 		/*curseur en forme de flêche*/
 }
@@ -535,7 +537,9 @@ footer {
 	.search {
 		margin: 0 20px;
 	}
-
+	#location {
+		width: 100%
+	}
 	.filter-bar {
 		display: inline;
 	}
@@ -546,8 +550,8 @@ footer {
 	}
 	.filter-button {
 		margin-top: 20px;
-		
-		flex: 0 1 38%;
+		max-width: 162px;
+		flex: 0 1 37%;
 		margin-left: 0;
 		padding: 13px 14px;
 	}
@@ -566,6 +570,7 @@ footer {
 		box-shadow: 0 2px 1px 1px var(--filter-border-color);
 	}
 	.fa-magnifying-glass {
+		cursor: pointer;
 		z-index: 1;
 			/* on fait apparaitre la loupe */
 	}
