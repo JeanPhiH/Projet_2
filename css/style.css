@@ -186,14 +186,7 @@ h1 {
 	color: black;
 		/*icone location en noire*/
 }
-.fa-magnifying-glass {
-	/*on met la loupe derrière le bouton*/
-	position: relative;
-	left: -35px;
-	color: red;
-	z-index: -1;
-	align-self: center;
-}
+
 
 #location {
 	height: 100%;
@@ -217,6 +210,14 @@ input::placeholder {
 	border-bottom-right-radius: 15px;
 	color: white;
 	cursor: pointer;
+}
+
+.fa-magnifying-glass {
+	/*position de la loupe*/
+	position: absolute;
+	right: 35px;
+	color: white;
+	z-index: -1;
 }
 
 /* Filter bar */
@@ -395,14 +396,16 @@ input::placeholder {
 	display: flex;
 	justify-content: space-between;
 }
-
-.card-photo {
+.activites-cards a {
+	flex: 0 1 23%;
 	width: 297px;
+	height: 100%;
+}
+.card-photo {
 	background-color: white;
 	border-radius: 20px;
 	padding: 0;
 	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-	flex: 0 1 23%;
 }
 
 .activites-cards img {
@@ -537,29 +540,12 @@ footer {
 	.search {
 		margin: 0 20px;
 	}
+	.search-bar{
+		width: 100%;
+	}
 	#location {
-		width: 100%
+		/* width: 100% */
 	}
-	.filter-bar {
-		display: inline;
-	}
-	.button-list {
-		gap: 0;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.filter-button {
-		margin-top: 20px;
-		max-width: 162px;
-		flex: 0 1 37%;
-		margin-left: 0;
-		padding: 13px 14px;
-	}
-	.button-text {
-		margin-left: 8px;
-		font-size: 13px;
-	}
-	
 	.search-button {
 		height: 100%;
 		width: 50px;
@@ -574,6 +560,28 @@ footer {
 		z-index: 1;
 			/* on fait apparaitre la loupe */
 	}
+	
+	.filter-bar {
+		display: inline;
+	}
+	.button-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.filter-button {
+		margin-top: 10px;
+		margin-left: 0;
+		padding: 13px 0 13px 14px;
+	}
+	.button-text {
+		margin-left: 8px;
+		font-size: 13px;
+	}
+	
+	
 
 /***** POPULAIRES *****/
 
@@ -634,6 +642,10 @@ footer {
 	footer {
 		flex-direction: column;
 		padding: 30px;
+		gap: 50px;
+	}
+	.footer-part {
+		padding: 0;
 	}
 	
 }
