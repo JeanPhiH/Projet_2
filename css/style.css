@@ -1,4 +1,4 @@
-/****** General ***********/
+/****** GENERAL ***********/
 * {
 	font-family: 'Raleway', sans-serif;
 	padding: 0;
@@ -81,7 +81,7 @@ font-size: 14px;
 
 
 
-/****** Header ***********/
+/****** HEADER ***********/
 
 header {
 	margin: 0 auto;
@@ -384,20 +384,23 @@ input::placeholder {
 	margin-top: 36px;
 }
 .activites-cards {
-	margin-top: 33px;
 	height: 439px;
+	margin-top: 33px;
 	display: flex;
 	justify-content: space-between;
 }
+
 .card-photo {
 	width: 297px;
 	background-color: white;
 	border-radius: 20px;
 	padding: 0;
 	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+	flex: 0 1 23%;
 }
 
 .activites-cards img {
+	object-fit: cover;
 	height: 380px;
 	width: 100%;
 	border-top-left-radius: 20px;
@@ -405,8 +408,9 @@ input::placeholder {
 }
 figcaption {
 	height: 59px;
-	margin-left: 19px;
-	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	padding: 0 19px;
 }
 
 
@@ -450,6 +454,15 @@ figcaption {
 	.populaires-cards a {
 		width: 30%;
 	}
+
+/***** ACTIVITES *****/
+	.activites-cards {
+		height: 270px;
+	}
+	.activites-cards img {
+		height: 200px;
+	}
+	
 }
 
 /* Small devices (phones, less than 768px) */
@@ -578,4 +591,17 @@ figcaption {
 	.afficher-plus {
 		margin-top: 15px;
 	}
+
+/***** POPULAIRES *****/
+	.activites-cards {
+		flex-direction: column;
+		height: 845px;
+	}
+	.card-photo {
+		width: 100%;
+	}
+	.activites-cards img {
+		height: 141px;
+	}
+	
 }
