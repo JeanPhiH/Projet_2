@@ -397,7 +397,7 @@ input::placeholder {
 	justify-content: space-between;
 }
 .activites-cards a {
-	flex: 0 1 23%;
+	flex-basis: 23%;
 	width: 297px;
 	height: 100%;
 }
@@ -430,7 +430,7 @@ footer {
 	background-color: var(--main-bg-color);
 }
 .footer-part {
-	flex: 0 1 33%;
+	flex-basis: 33%;
 	padding: 20px;
 
 }
@@ -518,7 +518,7 @@ footer {
 	nav li {
 		border-top: none;
 		border-bottom: 3px solid var(--main-bg-color);
-		flex: 0 1 50%;
+		flex-basis: 50%;
 		justify-content: center;
 	}
 	nav li:hover {
@@ -542,6 +542,9 @@ footer {
 	}
 	.search-bar{
 		width: 100%;
+	}
+	.icontainer {
+		width: 75px !important;
 	}
 	#location {
 		width: 100%
@@ -574,9 +577,16 @@ footer {
 	.filter-button {
 		margin-top: 10px;
 		margin-left: 0;
-		padding: 13px 0 13px 14px;
+		padding: 13px 0 13px 15px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+	}
+	.filter-button i {
+		flex-basis: 15%;
 	}
 	.button-text {
+		flex-basis: 85%;
 		margin-left: 8px;
 		font-size: 13px;
 	}
