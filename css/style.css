@@ -585,8 +585,6 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 10px;
-		justify-content: center;
-		align-items: center;
 	}
 	.filter-button {
 		margin-top: 10px;
