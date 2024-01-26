@@ -312,6 +312,11 @@ input::placeholder {
 	margin-top: 33px;
 }
 
+.hebergements-cards .card {
+	height: 95%;
+	 /*pour s'adapter losrque le titre est sur plusieurs lignes*/
+}
+
 .hebergements-cards img {
 	height: 114px;
 	width: 100%;
@@ -320,7 +325,7 @@ input::placeholder {
 }
 
 .hebergements-cards .card-content {
-	padding-left: 15px;
+	padding-left: 10px;
 	box-sizing: border-box;
 }
 
@@ -356,13 +361,14 @@ input::placeholder {
 }
 
 .populaires-cards .card {
+	height: 75%;
 	display: flex;
 	margin-top: 33px;
 }
 
 .populaires-cards img {
 	width: 33%;
-	height: 136px;
+	height: 100%;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
