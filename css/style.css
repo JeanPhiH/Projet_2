@@ -298,6 +298,11 @@ input::placeholder {
 	box-sizing: border-box;
 }
 
+.card-rating {
+	display: flex;
+	margin-bottom: 8px;
+}
+
 /****** HEBERGEMENTS ***********/
 .hebergements {
 	background-color: var(--main-bg-color);
@@ -314,7 +319,7 @@ input::placeholder {
 
 .hebergements-cards .card {
 	height: 95%;
-	 /*pour s'adapter losrque le titre est sur plusieurs lignes*/
+	 /*pour s'adapter lorsque le titre est sur plusieurs lignes*/
 }
 
 .hebergements-cards img {
@@ -339,8 +344,8 @@ input::placeholder {
 }
 
 .hebergements-cards .card-rating {
-	margin-bottom: 5px;
 	margin-top: 8px;
+	font-size: 13px;
 }
 
 .afficher-plus {
@@ -389,10 +394,6 @@ input::placeholder {
 
 .populaires-cards .card-subtitle {
 	margin: 0;
-}
-
-.populaires-cards .card-rating {
-	margin-bottom: 5px;
 }
 
 /****** ACTIVITES ***********/
